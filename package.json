@@ -1,0 +1,41 @@
+{
+  "name": "creditor-id",
+  "version": "0.1.0",
+  "description": "Parse, format and validate a Creditor Identifier (CID)",
+  "license": "MIT",
+  "keywords": [
+    "gläubiger",
+    "identifikationsnummer",
+    "cid",
+    "id",
+    "identification",
+    "identifier",
+    "creditor",
+    "bank",
+    "number",
+    "sepa",
+    "sdd",
+    "iban"
+  ],
+  "main": "lib/creditor-id.js",
+  "author": {
+    "name": "Jonas Hermsmeier",
+    "email": "jhermsmeier@gmail.com",
+    "url": "https://jhermsmeier.de/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~2.4.5"
+  },
+  "scripts": {
+    "test": "mocha --ui tdd"
+  },
+  "homepage": "https://github.com/jhermsmeier/node-creditor-id",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhermsmeier/node-creditor-id.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhermsmeier/node-creditor-id/issues"
+  }
+}
