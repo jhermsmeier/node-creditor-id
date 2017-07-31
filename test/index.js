@@ -51,6 +51,13 @@ suite( 'Creditor Identifier', function() {
   test( 'parse( string )', function() {
     var cd = CreditorId.parse( data )
     assert.ok( cd )
+    assert.ok( cd instanceof CreditorId )
+  })
+  
+  test( 'toString()', function() {
+    var cd = new CreditorId( data )
+    var fmt = cd.toString()
+    assert.equal( cd, fmt )
   })
   
 })
