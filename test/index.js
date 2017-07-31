@@ -33,22 +33,24 @@ suite( 'Creditor Identifier', function() {
       var cd = new CreditorId( 'DE', '98', 'ZZZ', '09999999999' )
       assert.deepEqual( cd, parsed )
     })
-    
-    test( 'getChecksum()' )
-    test( 'check()' )
-    
+
+    test( 'getChecksum()', function() {
+      var testCreditorId = new CreditorId( data )
+      var checksum = testCreditorId.getChecksum()
+      var expected = 98
+      assert.equal( checksum, expected );
+    } )
+
+    test( 'check()', function() {
+      var testCreditorId = new CreditorId( data )
+      assert.ok( testCreditorId.check() )
+    } )
+
   })
   
   test( 'parse( string )', function() {
     var cd = CreditorId.parse( data )
     assert.ok( cd )
-    assert.ok( cd instanceof CreditorId )
-  })
-  
-  test( 'toString()', function() {
-    var cd = new CreditorId( data )
-    var fmt = cd.toString()
-    assert.equal( cd, fmt )
   })
   
 })
