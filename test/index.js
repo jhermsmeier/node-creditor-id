@@ -38,13 +38,13 @@ suite( 'Creditor Identifier', function() {
       var testCreditorId = new CreditorId( data )
       var checksum = testCreditorId.getChecksum()
       var expected = 98
-      assert.equal( checksum, expected );
-    } )
+      assert.equal( checksum, expected )
+    })
 
     test( 'check()', function() {
       var testCreditorId = new CreditorId( data )
       assert.ok( testCreditorId.check() )
-    } )
+    })
 
   })
   
