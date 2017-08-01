@@ -16,6 +16,8 @@ $ npm install creditor-id
 var CreditorId = require( 'creditor-id' )
 ```
 
+**Parsing CIDs**
+
 ```js
 var cid = new CreditorId( 'DE98ZZZ09999999999' ) // OR
 var cid = CreditorId.parse( 'DE98ZZZ09999999999' )
@@ -29,6 +31,20 @@ CreditorId {
   nationalId: '09999999999'
 }
 ```
+
+**Calculating and validating checksums**
+
+```js
+var checksum = cid.getChecksum() // > '98'
+```
+
+```js
+if( cid.check() ) {
+  // The CID's checksum is valid
+}
+```
+
+**Formatting a CID**
 
 ```js
 cid.toString() // > 'DE98ZZZ09999999999'
