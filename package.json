@@ -1,6 +1,6 @@
 {
   "name": "creditor-id",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Parse, format and validate a Creditor Identifier (CID)",
   "license": "MIT",
   "keywords": [
